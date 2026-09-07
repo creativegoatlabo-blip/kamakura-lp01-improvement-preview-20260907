@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -8,47 +8,54 @@
   <title>作る時間も、一生の宝物になる。｜LP01改善案</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/hero-couple.jpg" fetchpriority="high">
-  <link rel="stylesheet" href="tokens.css">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/sample-01.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="vendor/pico-2.1.1.conditional.min.css">
+  <link rel="stylesheet" href="tokens.css?v=forest-wood-pico">
+  <link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
 
   <div class="preview-notice" role="status">
-    <strong>LP01改善案プレビュー</strong>
-    <span>予約は完了しません</span>
+    <span>デザイン確認用プレビュー</span>
+    <span>予約は送信されません</span>
   </div>
 
   <header class="site-header" aria-label="サイトヘッダー">
+    <p class="header-note">ふたりの手でつくる、<br>ふたりだけの結婚指輪。</p>
     <a class="brand" href="#top" aria-label="ページ上部へ">
       <img src="assets/logo.png" width="300" height="38" alt="鎌倉彫金工房">
       <span>手作り結婚指輪・婚約指輪</span>
     </a>
-    <a class="nav-cta" href="#reservation-preview">空席を確認する</a>
+    <div class="header-action pico"><button class="outline nav-cta" type="button" data-scroll-to="reservation-preview">空席・ご予約 <span aria-hidden="true">↗</span></button></div>
   </header>
 
+  <nav class="section-nav" aria-label="ページ内メニュー">
+    <a href="#concept">手作りについて</a>
+    <a href="#design">デザインと価格</a>
+    <a href="#flow">制作の流れ</a>
+    <a href="#reservation-preview">工房を選ぶ</a>
+  </nav>
+
   <main id="main">
-    <section class="hero page-shell" id="top" aria-labelledby="hero-title">
-      <div class="hero__copy">
-        <p class="hero__kicker">ふたりで手作りする結婚指輪</p>
-        <h1 id="hero-title">作る時間も、<br>一生の宝物になる。</h1>
-        <p class="hero__lede">ふたりでつくる、これからの結婚指輪。初めての指輪作りを、職人がそばで支えます。</p>
-        <p class="hero__quick-facts">1本 98,000円〜 <span>·</span> およそ3時間 <span>·</span> 最短当日</p>
-        <div class="hero__actions">
-          <a class="button button--primary" href="#reservation-preview">空席を確認する <span aria-hidden="true">→</span></a>
-          <a class="text-link" href="#reservation-preview">見学・相談はこちら <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-
+    <section class="hero" id="top" aria-labelledby="hero-title">
       <figure class="hero__media">
-        <img class="hero__main-image" src="assets/hero-couple.jpg" width="590" height="400" alt="二人で結婚指輪を手作りする様子" fetchpriority="high">
-        <img class="hero__ring-image" src="assets/sample-01.jpg" width="1536" height="1012" alt="手作りの結婚指輪">
+        <img class="hero__main-image" src="assets/sample-01.jpg" width="1536" height="1012" alt="木の台に並べた、ふたりで手作りした結婚指輪" fetchpriority="high">
+        <figcaption>手をかけた時間まで、ふたりの指輪に。</figcaption>
       </figure>
-
-      <div class="hero__assurance"><span>職人が完成までサポート</span><span>鎌倉・横浜・大阪・東京蔵前</span></div>
+      <div class="hero__copy">
+        <p class="hero__kicker">鎌倉彫金工房の手作り結婚指輪</p>
+        <h1 id="hero-title">作る時間も、<br>一生の宝物になる。</h1>
+        <p class="hero__lede">木の温もりを感じる工房で。<br>ひとつの金属から、ふたりの指輪を。<br>初めての制作を、職人が支えます。</p>
+        <a class="text-link" href="#concept">ふたりで作る時間について <span aria-hidden="true">↓</span></a>
+      </div>
     </section>
+
+    <div class="hero-booking page-shell">
+      <div class="hero-booking__facts"><p>手作り結婚指輪</p><strong>1本 <span>98,000</span>円〜</strong><p>制作 約3時間 <span aria-hidden="true">／</span> 最短当日お持ち帰り<small>石留め・オプション加工は4〜5週間</small></p></div>
+      <div class="hero-booking__actions pico"><button class="button" type="button" data-scroll-to="reservation-preview">空席を確認する <span aria-hidden="true">↗</span></button><a class="text-link" href="#reservation-preview">見学・相談をご希望の方</a></div>
+    </div>
 
     <section class="decision-strip" aria-label="予約前に知りたい基本情報">
       <div><small>基本価格</small><strong>1本 98,000円〜</strong></div>
@@ -58,9 +65,9 @@
       <div><small>アフターケア</small><strong>永久保証</strong></div>
     </section>
 
-    <section class="concept split-section page-shell" aria-labelledby="concept-title">
+    <section class="concept split-section page-shell" id="concept" aria-labelledby="concept-title">
       <div class="split-copy">
-        <p class="section-label">鎌倉彫金工房の手作り結婚指輪とは</p>
+        <p class="section-label">ふたりで作る、という選び方</p>
         <h2 id="concept-title">金属の棒を丸めて、<br>ふたりの指輪に。</h2>
         <p>ご自身の手で金属の棒を丸めたり磨いたりして手作りする指輪のことです。</p>
         <p>既製品やオーダーメイドとは異なり、指輪が完成した時の達成感や感動はひとしお。指輪ができる過程まで、特別な思い出として残すことができます。</p>
@@ -75,7 +82,7 @@
     <section class="points page-shell" aria-labelledby="points-title">
       <div class="section-heading">
         <p class="section-label">手作り結婚指輪のポイント</p>
-        <h2 id="points-title">楽しさと、仕上がり。<br>どちらも大切にしています。</h2>
+        <h2 id="points-title">楽しさも、仕上がりも。<br>どちらも大切に。</h2>
       </div>
 
       <article class="point-row">
@@ -107,8 +114,8 @@
     <section class="examples wide-section" id="design" aria-labelledby="examples-title">
       <div class="page-shell">
         <div class="section-heading section-heading--split">
-          <div><p class="section-label">予約前に比較できるように</p><h2 id="examples-title">制作事例に、<br>仕様と価格を。</h2></div>
-          <p>現行LP01にはない価格の判断材料を、実際のデザインと同じ場所で確認できる改善案です。</p>
+          <div><p class="section-label">デザインと価格</p><h2 id="examples-title">ふたりらしさは、<br>小さな違いに宿る。</h2></div>
+          <p>素材、幅、かたち、仕上げ。手にした時の心地よさを大切に、おふたりそれぞれに似合う一本を。</p>
         </div>
 
         <div class="product-grid">
@@ -125,15 +132,15 @@
             <div><h3>幅違いで揃えたプラチナペア</h3><dl><div><dt>Pt900・甲丸・2.5 mm・クリア</dt><dd>¥138,000</dd></div><div><dt>Pt900・甲丸・1.5 mm・クリア</dt><dd>¥98,000</dd></div></dl></div>
           </article>
         </div>
-        <p class="fine-print">※表示は公式コースページの現行制作事例を再構成。オプションにより追加料金がかかる場合があります。</p>
+        <p class="fine-print">※価格は1本あたりの制作事例です。素材・幅・オプションにより異なります。</p>
       </div>
     </section>
 
     <section class="course-facts page-shell" aria-labelledby="facts-title">
       <div class="course-facts__intro">
         <p class="section-label">コース情報</p>
-        <h2 id="facts-title">予約前に、<br>必要なことを一覧で。</h2>
-        <p>検討中に確認したい基本情報を、フォームへ進む前にまとめて掲載します。</p>
+        <h2 id="facts-title">はじめてでも、<br>安心して作れる。</h2>
+        <p>制作にかかる時間やお受け取り、完成後のお手入れまで。ご予約の前に知っておきたいことをまとめました。</p>
       </div>
       <dl class="spec-list">
         <div><dt>基本価格</dt><dd>1本 98,000円〜</dd></div>
@@ -152,18 +159,18 @@
         <h2 id="making-title">ちょっと大変。<br>それが魅力。</h2>
         <p>お客さまの指輪作りは、熟練のジュエリー職人が丁寧にサポートします。</p>
         <ol class="step-list">
-          <li><span>1.0</span><div><h3>デザイン決定</h3><p>サンプルや先輩作品を見ながら、素材やデザインを選びます。</p></div></li>
-          <li><span>2.0</span><div><h3>焼きなまし・溶接</h3><p>金属を熱してやわらかくし、曲げて端と端をつなげます。</p></div></li>
-          <li><span>3.0</span><div><h3>丸くする</h3><p>木づちでカンカンたたきながら、いびつなリングを真円に整えます。</p></div></li>
-          <li><span>4.0</span><div><h3>磨いて完成</h3><p>複数のヤスリを使って仕上げます。オプション加工がない場合は、その日のうちに持ち帰れます。</p></div></li>
+          <li><span>一</span><div><h3>デザイン決定</h3><p>サンプルや先輩作品を見ながら、素材やデザインを選びます。</p></div></li>
+          <li><span>二</span><div><h3>焼きなまし・溶接</h3><p>金属を熱してやわらかくし、曲げて端と端をつなげます。</p></div></li>
+          <li><span>三</span><div><h3>丸くする</h3><p>木づちでカンカンたたきながら、いびつなリングを真円に整えます。</p></div></li>
+          <li><span>四</span><div><h3>磨いて完成</h3><p>複数のヤスリを使って仕上げます。オプション加工がない場合は、その日のうちに持ち帰れます。</p></div></li>
         </ol>
       </div>
-      <figure class="making__visual"><img src="assets/flow.png" width="706" height="2665" alt="予約から完成までの結婚指輪制作の流れ" loading="lazy"><figcaption>現行LP01の制作工程図</figcaption></figure>
+      <figure class="making__visual"><img src="assets/flow.png" width="706" height="2665" alt="予約から完成までの結婚指輪制作の流れ" loading="lazy"><figcaption>素材選びから、磨いて仕上げるまで。</figcaption></figure>
     </section>
 
     <section class="proof wide-section" aria-labelledby="proof-title">
       <div class="page-shell">
-        <div class="section-heading"><p class="section-label">工房の実績</p><h2 id="proof-title">年間14,060本の指輪が、<br>工房で手作りされています。</h2><p>※姉妹店を含む2022年の合計。現行LP01の表記を年次とともに再現しています。</p></div>
+        <div class="section-heading"><p class="section-label">工房の実績</p><h2 id="proof-title">一組ずつ、一つずつ。<br>積み重ねてきた手作りの時間。</h2><p>2022年には、姉妹店を含め14,060本の指輪が工房で手作りされました。</p></div>
         <div class="proof-grid">
           <img src="assets/proof-volume.png" width="670" height="670" alt="工房で手作りされた指輪の実績イメージ" loading="lazy">
           <img src="assets/proof-media.png" width="325" height="325" alt="手作り結婚指輪の掲載実績" loading="lazy">
@@ -173,7 +180,7 @@
     </section>
 
     <section class="voices page-shell" aria-labelledby="voices-title">
-      <div class="section-heading"><p class="section-label">お客さまの声</p><h2 id="voices-title">いい時間を、<br>いただいております。</h2></div>
+      <div class="section-heading"><p class="section-label">お客さまの声</p><h2 id="voices-title">指輪を見るたびに、<br>あの日を思い出す。</h2></div>
       <div class="voice-list">
         <figure class="voice"><img src="assets/voice-01.png" width="195" height="338" alt="手作り結婚指輪を制作したS様" loading="lazy"><blockquote><h3>一緒に作った時間が、思い出になって残る</h3><p>一緒にいなくても指輪を見るだけで相手のことや作った日のことを思い出せます。</p><cite>S様</cite></blockquote></figure>
         <figure class="voice voice--reverse"><img src="assets/voice-02.png" width="195" height="338" alt="手作り結婚指輪を制作したH様" loading="lazy"><blockquote><h3>指輪作りは初めてでしたが、とても楽しかったです</h3><p>没頭して、完成した後は達成感もありました。最後に光る瞬間はテンションが上がりました。</p><cite>H様</cite></blockquote></figure>
@@ -184,27 +191,29 @@
     <section class="faq wide-section" aria-labelledby="faq-title">
       <div class="page-shell faq__layout">
         <div><p class="section-label">よくあるご質問</p><h2 id="faq-title">予約前の、<br>気がかりを解決。</h2></div>
-        <div class="faq__list">
-          <details><summary>不器用なのですが、作れますか？</summary><p>ご心配いりません。経験豊富なジュエリー職人が完成までしっかりとサポートします。</p></details>
+        <div class="faq__list pico">
+          <details><summary>初めてでも作れますか？</summary><p>ご心配いりません。経験豊富なジュエリー職人が完成までしっかりとサポートします。</p></details>
           <details><summary>いつ完成しますか？</summary><p>結婚指輪は約3時間で完成します。石留めやその他のオプション加工がある場合は、4〜5週間程度お預かりします。</p></details>
-          <details><summary>アフターケアについて教えてください。</summary><p>結婚指輪・婚約指輪は永久保証です。仕上げ直し、サイズ調整、変形直し、石の留め直し、クリーニングを期限なしで承ります（有料の場合もあります）。</p></details>
-          <details><summary>見学やデザイン相談だけでもいいですか？</summary><p>はい。実物サンプルを見ながら、素材やデザインをご相談いただけます。</p></details>
+          <details><summary>完成後のお手入れは？</summary><p>結婚指輪・婚約指輪は永久保証です。仕上げ直し、サイズ調整、変形直し、石の留め直し、クリーニングを期限なしで承ります（有料の場合もあります）。</p></details>
+          <details><summary>見学・相談だけでもいいですか？</summary><p>はい。実物サンプルを見ながら、素材やデザインをご相談いただけます。</p></details>
         </div>
       </div>
     </section>
 
     <section class="reservation page-shell" id="reservation-preview" aria-labelledby="reservation-title">
-      <div class="reservation__heading"><p class="section-label">空席案内・ご予約</p><h2 id="reservation-title">まずは、工房をお選びください。</h2><p>実際のLP01と同様に、予約をページ内で完了する構成を再現しています。</p></div>
+      <div class="reservation__heading"><p class="section-label">空席案内・ご予約</p><h2 id="reservation-title">ふたりの一日を、<br>工房でお待ちしています。</h2><p>鎌倉、横浜元町、大阪中崎町、東京蔵前。お好きな街の工房をお選びください。</p></div>
 
-      <fieldset class="shop-grid">
+      <fieldset class="shop-picker pico">
         <legend>店舗を選択してください</legend>
+        <div class="shop-grid">
         <label class="shop-card"><input type="radio" name="shop" value="kamakura"><img src="assets/shop-kamakura.jpg" width="190" height="190" alt="鎌倉彫金工房 本店"><span><strong>鎌倉</strong><small>鎌倉駅西口より徒歩3分</small></span></label>
         <label class="shop-card"><input type="radio" name="shop" value="yokohama"><img src="assets/shop-yokohama.jpg" width="190" height="190" alt="鎌倉彫金工房 横浜元町"><span><strong>横浜元町</strong><small>元町・中華街駅より徒歩5分</small></span></label>
         <label class="shop-card"><input type="radio" name="shop" value="osaka"><img src="assets/shop-osaka.jpg" width="190" height="190" alt="鎌倉彫金工房 大阪中崎町"><span><strong>大阪中崎町</strong><small>中崎町駅より徒歩4分</small></span></label>
         <label class="shop-card"><input type="radio" name="shop" value="kuramae"><img src="assets/shop-kuramae.jpg" width="190" height="190" alt="鎌倉彫金工房 東京蔵前"><span><strong>東京蔵前</strong><small>蔵前駅A6出口より徒歩4分</small></span></label>
+        </div>
       </fieldset>
 
-      <form class="preview-form" aria-describedby="preview-form-note">
+      <form class="preview-form pico" aria-describedby="preview-form-note">
         <p class="preview-form__title">お客さま情報</p>
         <div class="form-grid">
           <label><span>お名前 <em>必須</em></span><input type="text" name="name" autocomplete="name" placeholder="鎌倉 彫子"></label>
@@ -215,20 +224,20 @@
           <label class="form-grid__wide"><span>その他のご要望 <small>任意</small></span><textarea name="message" rows="4" placeholder="ご自由にどうぞ"></textarea></label>
         </div>
         <p class="preview-form__note" id="preview-form-note">これは比較用プレビューです。入力内容は送信されず、予約枠の取得も行いません。</p>
-        <button class="button button--primary preview-submit" type="submit">予約内容を確認する</button>
+        <button class="button preview-submit" type="submit">予約内容を確認する <span aria-hidden="true">→</span></button>
       </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <img src="assets/logo.png" width="300" height="38" alt="鎌倉彫金工房">
-    <p>作る時間も、一生の宝物になる。</p>
+    <a class="footer-top" href="#top">ページの先頭へ ↑</a>
     <p class="site-footer__meta">LP01改善案プレビュー · <span id="year">2026</span></p>
   </footer>
 
-  <aside class="sticky-cta" aria-label="予約アクション">
+  <aside class="sticky-cta pico" aria-label="予約アクション" inert>
     <span>1本98,000円〜 · 約3時間</span>
-    <a class="button button--compact" href="#reservation-preview">空席を確認する</a>
+    <button class="button button--compact" type="button" data-scroll-to="reservation-preview">空席を確認する <span aria-hidden="true">↗</span></button>
   </aside>
 
   <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="dialog-title">
@@ -236,10 +245,10 @@
       <p class="section-label">プレビュー専用</p>
       <h2 id="dialog-title">予約内容は送信されません</h2>
       <p>このページはLP01改善案の比較用です。公式の予約枠・顧客情報・広告計測に接続していません。</p>
-      <button class="button button--primary dialog-close" type="button">プレビューに戻る</button>
+      <div class="pico"><button class="button dialog-close" type="button">プレビューに戻る</button></div>
     </div>
   </dialog>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=forest-wood-pico" defer></script>
 </body>
 </html>

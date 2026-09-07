@@ -1,21 +1,27 @@
-/* Hallmark · pre-emit: P4 H4 E4 S4 R4 V4 · genre: editorial · macrostructure: Split Studio · theme: Linen (LP01 brand-matched) · enrichment: E8 owned photography · nav: N9 · footer: Ft1 · slop: pass */
+/* Hallmark · macrostructure: Photographic · theme: custom forest and wood · library: Pico CSS 2.1.1
+ * display: Shippori Mincho · body: Noto Sans JP · nav: N6 · footer: Ft2
+ * Brand palette retained at user request; layout and type treatment redesigned.
+ */
 :root {
-  --color-paper: oklch(97% 0.011 86);
-  --color-paper-2: oklch(93.5% 0.022 86);
-  --color-paper-3: oklch(89% 0.027 81);
-  --color-ink: oklch(24% 0.015 70);
-  --color-ink-2: oklch(40% 0.018 72);
-  --color-muted: oklch(45% 0.018 72);
-  --color-rule: oklch(80% 0.023 80);
-  --color-rule-strong: oklch(64% 0.03 75);
-  --color-accent: oklch(48% 0.058 145);
-  --color-accent-deep: oklch(34% 0.054 149);
-  --color-accent-soft: oklch(89% 0.03 142);
+  --color-paper: oklch(97.4% 0.009 86);
+  --color-paper-2: oklch(94.7% 0.017 82);
+  --color-paper-3: oklch(90.5% 0.025 77);
+  --color-ink: oklch(28% 0.023 141);
+  --color-ink-2: oklch(40% 0.018 100);
+  --color-muted: oklch(46.5% 0.018 88);
+  --color-rule: oklch(84% 0.018 84);
+  --color-rule-strong: oklch(65% 0.027 85);
+  --color-accent: oklch(43.5% 0.054 153);
+  --color-accent-deep: oklch(34% 0.043 153);
+  --color-accent-soft: oklch(92.5% 0.021 139);
   --color-accent-ink: oklch(97% 0.012 95);
+  --color-wood: oklch(46% 0.054 57);
+  --color-focus: oklch(46% 0.075 150);
   --color-required: oklch(43% 0.12 32);
   --color-overlay: oklch(18% 0.015 70 / 0.48);
+  --color-transparent: transparent;
 
-  --font-display: "Hina Mincho", "YuMincho", "Yu Mincho", serif;
+  --font-display: "Shippori Mincho", "YuMincho", "Yu Mincho", serif;
   --font-body: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
 
   --space-3xs: 0.125rem;
@@ -38,18 +44,63 @@
   --text-2xl: 2.4414rem;
   --text-3xl: 3.0518rem;
 
-  --page-gutter: clamp(1rem, 4vw, 4rem);
-  --content-max: 74rem;
+  --page-gutter: clamp(1.25rem, 5vw, 5rem);
+  --content-max: 78rem;
   --measure: 65ch;
 
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
   --dur-micro: 120ms;
   --dur-short: 220ms;
 
   --z-sticky: 200;
   --z-modal: 400;
+}
+
+:root[data-theme="light"], .pico {
+  --pico-font-family: var(--font-body);
+  --pico-font-size: 100%;
+  --pico-font-weight: 400;
+  --pico-line-height: 1.8;
+  --pico-border-radius: var(--radius-sm);
+  --pico-background-color: var(--color-paper);
+  --pico-color: var(--color-ink);
+  --pico-muted-color: var(--color-muted);
+  --pico-muted-border-color: var(--color-rule);
+  --pico-primary: var(--color-accent-deep);
+  --pico-primary-background: var(--color-accent);
+  --pico-primary-border: var(--color-accent);
+  --pico-primary-hover: var(--color-accent-deep);
+  --pico-primary-hover-background: var(--color-accent-deep);
+  --pico-primary-hover-border: var(--color-accent-deep);
+  --pico-primary-inverse: var(--color-accent-ink);
+  --pico-primary-focus: var(--color-focus);
+  --pico-primary-underline: var(--color-rule-strong);
+  --pico-contrast: var(--color-ink);
+  --pico-contrast-background: var(--color-ink);
+  --pico-contrast-inverse: var(--color-paper);
+  --pico-h1-color: var(--color-ink);
+  --pico-h2-color: var(--color-ink);
+  --pico-h3-color: var(--color-ink);
+  --pico-form-element-background-color: var(--color-paper);
+  --pico-form-element-border-color: var(--color-rule-strong);
+  --pico-form-element-color: var(--color-ink);
+  --pico-form-element-placeholder-color: var(--color-muted);
+  --pico-form-element-active-background-color: var(--color-paper);
+  --pico-form-element-active-border-color: var(--color-accent);
+  --pico-form-element-focus-color: var(--color-accent-soft);
+  --pico-form-element-valid-border-color: var(--color-accent);
+  --pico-form-element-invalid-border-color: var(--color-required);
+  --pico-form-element-spacing-vertical: var(--space-sm);
+  --pico-form-element-spacing-horizontal: var(--space-md);
+  --pico-accordion-border-color: var(--color-rule);
+  --pico-accordion-active-summary-color: var(--color-accent-deep);
+  --pico-accordion-close-summary-color: var(--color-ink);
+  --pico-accordion-open-summary-color: var(--color-accent-deep);
+  --pico-text-selection-color: var(--color-accent-soft);
+  --pico-transition: none;
 }

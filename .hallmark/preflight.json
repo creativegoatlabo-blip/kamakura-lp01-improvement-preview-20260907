@@ -6,13 +6,16 @@
   "primaryUseCase": "LP内で手作りの価値と購入条件を確認し、工房と日時を選んで来店予約する",
   "tone": "現行の深緑とベージュを保った柔らかな上質感",
   "genre": "editorial",
-  "macrostructure": "Split Studio",
-  "theme": "Linen (LP01 brand-matched)",
-  "navigation": "N9 Edge-aligned minimal",
-  "footer": "Ft1 Mast-headed",
+  "macrostructure": "Photographic",
+  "theme": "custom forest and wood",
+  "library": "Pico CSS 2.1.1 conditional",
+  "fonts": ["Shippori Mincho", "Noto Sans JP"],
+  "navigation": "N6 centered masthead",
+  "footer": "Ft2 inline single line",
   "enrichment": "E8 owned photography copied from the current LP01 and official course page",
   "productionTouched": false,
   "analyticsIncluded": false,
   "reservationBackendIncluded": false,
-  "priorHallmarkStampFound": false
+  "priorHallmarkStampFound": true,
+  "redesignReason": "The user rejected the previous design taste and requested another library while retaining green and wood colors"
 }
