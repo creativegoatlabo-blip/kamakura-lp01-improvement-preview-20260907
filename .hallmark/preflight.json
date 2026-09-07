@@ -17,5 +17,16 @@
   "analyticsIncluded": false,
   "reservationBackendIncluded": false,
   "priorHallmarkStampFound": true,
+  "scrollMotion": {
+    "userRequested": true,
+    "primitives": ["masked heading lines and label rules", "photo depth reveal", "staggered content groups"],
+    "durationMs": 500,
+    "lineStaggerMs": 110,
+    "maximumGroupDelayMs": 280,
+    "repeat": false,
+    "scrollHijacking": false,
+    "reducedMotion": "static, including preference changes during a visit",
+    "additionalDependencies": []
+  },
   "redesignReason": "The user rejected the previous design taste and requested another library while retaining green and wood colors"
 }

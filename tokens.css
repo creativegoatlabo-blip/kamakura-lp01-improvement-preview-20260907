@@ -56,6 +56,9 @@
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
   --dur-micro: 120ms;
   --dur-short: 220ms;
+  --dur-reveal: 500ms;
+  --reveal-step: 110ms;
+  --reveal-distance: 1.5rem;
 
   --z-sticky: 200;
   --z-modal: 400;

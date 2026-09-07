@@ -1,6 +1,46 @@
 [
   {
     "date": "2026-09-07",
+    "scope": "scroll-motion-enhancement",
+    "genre": "editorial",
+    "macrostructure": "Photographic",
+    "theme": "custom forest and wood",
+    "userDirection": "Make sections and titles appear memorably with interactive scroll actions",
+    "designPreserved": ["Pico CSS 2.1.1", "forest and wood palette", "Shippori Mincho", "existing content and booking flow"],
+    "motion": {
+      "trigger": "IntersectionObserver, once per element",
+      "heading": "masked lines, 110 ms stagger, section-label rule",
+      "photo": "subtle scale and vertical reveal",
+      "groups": "staggered product examples, facts and making steps",
+      "durationMs": 500,
+      "maximumDelayMs": 280,
+      "animatedProperties": ["transform", "opacity"],
+      "scrollHijacking": false,
+      "extraLibraries": false
+    },
+    "qa": {
+      "htmlValidate": "pass",
+      "javascriptSyntax": "pass",
+      "viewports": [320, 375, 414, 768, 1440],
+      "revealTargets": 48,
+      "allTargetsRevealed": true,
+      "lineStaggerVerified": true,
+      "replayOnBackScroll": false,
+      "horizontalOverflow": "none",
+      "missingImages": "none",
+      "reducedMotionInitialAndRuntime": "pass",
+      "noJavascriptContent": "pass",
+      "failedMotionScriptBooking": "pass",
+      "print": "pass",
+      "formExternalPost": "none",
+      "bookingAndFaqInteractions": "pass",
+      "browserErrors": []
+    },
+    "previewUrl": "https://creativegoatlabo-blip.github.io/kamakura-lp01-improvement-preview-20260907/?v=scroll-reveal",
+    "status": "qa-passed"
+  },
+  {
+    "date": "2026-09-07",
     "scope": "single-page",
     "genre": "editorial",
     "macrostructure": "Photographic",
