@@ -1,0 +1,55 @@
+/* Hallmark · pre-emit: P4 H4 E4 S4 R4 V4 · genre: editorial · macrostructure: Split Studio · theme: Linen (LP01 brand-matched) · enrichment: E8 owned photography · nav: N9 · footer: Ft1 · slop: pass */
+:root {
+  --color-paper: oklch(97% 0.011 86);
+  --color-paper-2: oklch(93.5% 0.022 86);
+  --color-paper-3: oklch(89% 0.027 81);
+  --color-ink: oklch(24% 0.015 70);
+  --color-ink-2: oklch(40% 0.018 72);
+  --color-muted: oklch(45% 0.018 72);
+  --color-rule: oklch(80% 0.023 80);
+  --color-rule-strong: oklch(64% 0.03 75);
+  --color-accent: oklch(48% 0.058 145);
+  --color-accent-deep: oklch(34% 0.054 149);
+  --color-accent-soft: oklch(89% 0.03 142);
+  --color-accent-ink: oklch(97% 0.012 95);
+  --color-required: oklch(43% 0.12 32);
+  --color-overlay: oklch(18% 0.015 70 / 0.48);
+
+  --font-display: "Hina Mincho", "YuMincho", "Yu Mincho", serif;
+  --font-body: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.9531rem;
+  --text-2xl: 2.4414rem;
+  --text-3xl: 3.0518rem;
+
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --content-max: 74rem;
+  --measure: 65ch;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+
+  --z-sticky: 200;
+  --z-modal: 400;
+}

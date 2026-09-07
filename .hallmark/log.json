@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-09-07",
+    "scope": "single-page",
+    "genre": "editorial",
+    "macrostructure": "Split Studio",
+    "theme": "Linen (LP01 brand-matched)",
+    "hero": "H2 Split Diptych with E8 owned photography",
+    "navigation": "N9 Edge-aligned minimal",
+    "footer": "Ft1 Mast-headed",
+    "source": "https://reserve.kamakura-chokin.com/lp01/",
+    "qa": {
+      "htmlValidate": "pass",
+      "javascriptSyntax": "pass",
+      "viewports": [320, 375, 414, 768, 1440],
+      "horizontalOverflow": "none",
+      "wrappedAffordances": "none",
+      "missingImages": "none",
+      "formExternalPost": "none",
+      "contrast": "pass"
+    },
+    "status": "qa-passed-pending-publish"
+  }
+]
