@@ -3,6 +3,9 @@
 
 2026-09-07時点の現行広告LP `https://reserve.kamakura-chokin.com/lp01/` をブラウザで確認し、公開中の本文・画像・構成を元に再構成した静的プレビューです。
 
+- 公開プレビュー: https://creativegoatlabo-blip.github.io/kamakura-lp01-improvement-preview-20260907/
+- GitHubリポジトリ: https://github.com/creativegoatlabo-blip/kamakura-lp01-improvement-preview-20260907
+
 ## 再現した要素
 
 - 「金属の棒から作る」手作り体験の説明
