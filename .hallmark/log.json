@@ -19,6 +19,13 @@
       "formExternalPost": "none",
       "contrast": "pass"
     },
-    "status": "qa-passed-pending-publish"
+    "publish": {
+      "repository": "https://github.com/creativegoatlabo-blip/kamakura-lp01-improvement-preview-20260907",
+      "pages": "https://creativegoatlabo-blip.github.io/kamakura-lp01-improvement-preview-20260907/",
+      "commit": "7e7c5a0",
+      "http": 200,
+      "localLiveComparison": "pass"
+    },
+    "status": "published-preview"
   }
 ]
